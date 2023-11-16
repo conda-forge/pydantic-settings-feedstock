@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pydantic >=2
+    - pydantic >=2.3.0
     - python-dotenv >=0.21.0
 
 test:
