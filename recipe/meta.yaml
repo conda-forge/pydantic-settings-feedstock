@@ -1,5 +1,5 @@
 {% set name = "pydantic-settings" %}
-{% set version = "2.2.1" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydantic_settings-{{ version }}.tar.gz
-  sha256: 00b9f6a5e95553590434c0fa01ead0b216c3e10bc54ae02e37f359948643c5ed
+  sha256: 78db28855a71503cfe47f39500a1dece523c640afd5280edb5c5c9c9cfa534c9
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pydantic >=2.3.0
+    - pydantic >=2.7.0
     - python-dotenv >=0.21.0
 
 test:
