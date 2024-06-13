@@ -1,5 +1,5 @@
 {% set name = "pydantic-settings" %}
-{% set version = "2.3.2" %}
+{% set version = "2.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydantic_settings-{{ version }}.tar.gz
-  sha256: 05d33003c74c2cd585de97b59eb17b6ed67181bc8a3ce594d74b5d24e4df7323
+  sha256: 87fda838b64b5039b970cd47c3e8a1ee460ce136278ff672980af21516f6e6ce
 
 build:
   noarch: python
