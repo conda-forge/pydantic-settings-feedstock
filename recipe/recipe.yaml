@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pydantic-settings
-  version: "2.14.1"
+  version: "2.14.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydantic_settings-${{ version }}.tar.gz
-  sha256: e874d3bec7e787b0c9958277956ed9b4dd5de6a80e162188fdaff7c5e26fd5fa
+  sha256: c19dd64b19097f1de80184f0cc7b0272a13ae6e170cbf240a3e27e381ed14a5f
 
 build:
   number: 0
