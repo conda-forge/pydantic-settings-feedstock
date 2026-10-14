@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pydantic-settings
-  version: "2.15.0"
+  version: 2.16.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydantic_settings-${{ version }}.tar.gz
-  sha256: 694b793e84f766ba76a90ebdefc01d0a9a045dab0382bee70393da93712ad117
+  sha256: 5b6c578049ede4db0e2ef3b4eaa4ad4069cfa9211f83fb38df899dfade50a614
 
 build:
   number: 0
@@ -26,8 +26,8 @@ requirements:
     - typing-inspection >=0.4.0
     - python >=${{ python_min }}
     - pydantic >=2.7.0
-    - python-dotenv >=0.21.0
-
+    - python-dotenv >=1.2.2
+    - typing_extensions >=4.0.0
 tests:
   - python:
       imports:
